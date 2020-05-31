@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'NzE0NDA5OTUzMDM2NzMwMzkw.XtOZTA.z2MmFig7xipgZ2OdOE3k11lRTZ8';
+const token = '';
 
 const CommandsChannel = 'commands';
 const PingPongChannel = 'ping-pong';
