@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = '';
+const token = 'NzEyNTk4NTQwODU3MTE0NjM0.XtOYOg.Im7xKijnxWeysuXXplg6qy8-sOo';
 
 const CommandsChannel = 'commands';
 const PingPongChannel = 'ping-pong';
@@ -35,7 +35,7 @@ bot.on('message', message=>{
     case 'P-Help':
       break;
     case 'P-Info':
-      if(message.channel == PingPongChannel){
+      if(message.channel.name == PingPongChannel){
         var Info = new Discord.MessageEmbed()
         .setColor(PurpleColourHex)
         .setTitle('Ping Pong Info!')
@@ -56,7 +56,7 @@ bot.on('message', message=>{
       }
       break;
     case 'P-Ping':
-      if(message.channel == PingPongChannel){
+      if(message.channel.name == PingPongChannel){
         message.reply('Pong!')
       }else{
         let PingCommandWrongChannel = new Discord.MessageEmbed()
