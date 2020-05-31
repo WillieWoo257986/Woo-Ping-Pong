@@ -20,7 +20,7 @@ let ColourForEmbedName = '';
 
 const Prefix = '';
 
-var Version = '1.0.0 Beta 3';
+var Version = 'V1.0.0 Beta 3';
 
 var Footer = "Woo Ping Pong Version " + Version;
 
