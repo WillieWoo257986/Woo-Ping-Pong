@@ -35,7 +35,7 @@ bot.on('message', message=>{
     case 'P-Help':
       break;
     case 'P-Info':
-      if(message.channel === PingPongChannel){
+      if(message.channel == PingPongChannel){
         var Info = new Discord.MessageEmbed()
         .setColor(PurpleColourHex)
         .setTitle('Ping Pong Info!')
@@ -56,7 +56,7 @@ bot.on('message', message=>{
       }
       break;
     case 'P-Ping':
-      if(message.channel === PingPongChannel){
+      if(message.channel == PingPongChannel){
         message.reply('Pong!')
       }else{
         let PingCommandWrongChannel = new Discord.MessageEmbed()
@@ -73,7 +73,7 @@ bot.on('message', message=>{
       let ColourForEmbed = '';
       let ColourForEmbedName = '';
 
-      if(message.channel === PingPongChannel){
+      if(message.channel == PingPongChannel){
         if(args[1] === 'Green'){
           ColourForEmbed = GreenColourHex;
           ColourForEmbedName = args[1];
