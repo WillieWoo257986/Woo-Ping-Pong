@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = '';
+const token = 'NzE0NDA5OTUzMDM2NzMwMzkw.XtOZTA.z2MmFig7xipgZ2OdOE3k11lRTZ8';
 
 const CommandsChannel = 'commands';
 const PingPongChannel = 'ping-pong';
@@ -73,7 +73,7 @@ bot.on('message', message=>{
       let ColourForEmbed = '';
       let ColourForEmbedName = '';
 
-      if(message.channel == PingPongChannel){
+      if(message.channel.name == PingPongChannel){
         if(args[1] === 'Green'){
           ColourForEmbed = GreenColourHex;
           ColourForEmbedName = args[1];
