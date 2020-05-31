@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'NzE0NDA5OTUzMDM2NzMwMzkw.Xsw_Og.bPwnwGzT4w0oebSacmQ7lBmgSqg';
+const token = '';
 
-const CommandsChannelId = '702086242292072479';
-const PingPongChannelId = '714761505416937483';
+const CommandsChannel = 'commands';
+const PingPongChannel = 'ping-pong';
 
 let GreenColourHex = '#1fff0a';
 let OrangeColourHex = '#FF7400';
@@ -35,7 +35,7 @@ bot.on('message', message=>{
     case 'P-Help':
       break;
     case 'P-Info':
-      if(message.channel.id === PingPongChannelId){
+      if(message.channel.name == PingPongChannel){
         var Info = new Discord.MessageEmbed()
         .setColor(PurpleColourHex)
         .setTitle('Ping Pong Info!')
@@ -56,7 +56,7 @@ bot.on('message', message=>{
       }
       break;
     case 'P-Ping':
-      if(message.channel.id === PingPongChannelId){
+      if(message.channel.name == PingPongChannel){
         message.reply('Pong!')
       }else{
         let PingCommandWrongChannel = new Discord.MessageEmbed()
@@ -73,7 +73,7 @@ bot.on('message', message=>{
       let ColourForEmbed = '';
       let ColourForEmbedName = '';
 
-      if(message.channel === PingPongChannelId){
+      if(message.channel.name == PingPongChannel){
         if(args[1] === 'Green'){
           ColourForEmbed = GreenColourHex;
           ColourForEmbedName = args[1];
