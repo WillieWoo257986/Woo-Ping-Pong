@@ -20,9 +20,9 @@ let ColourForEmbedName = '';
 
 const Prefix = '';
 
-var Version = '1.0.0 Beta 3';
+var Version = '1.0.0';
 
-var Footer = "Woo Ping Pong Version " + Version;
+var Footer = "Woo Ping Pong Version " + Version + ' Made by WillieWoo257986!';
 
 bot.on('ready', () =>{
   console.log('Bot Online');
